@@ -6,6 +6,14 @@ my use case is, checking a file added by myself on git, than to call jsPrettier 
 
 it very like a JavaScript Promise version sublime run_command
 
+
+# install
+
+```sh
+cd ~/Library/Application\ Support/Sublime\ Text/Packages/
+git clone https://github.com/iahu/SublimeEitherRun.git EitherRun
+```
+
 # how to use
 
 work with sublime-hooks
@@ -16,8 +24,8 @@ work with sublime-hooks
     "command": "either_run",
     "args": {
       "cmd": "git log --diff-filter=A --author=yourName", // required
-      "resolve": "js_prettier", // optional
-      "reject": "select_all" // optional
+      "resolve": "js_prettier", // optional, run if cmd return stdout
+      "reject": "select_all" // optional, run if cmd return stderr
     }
   }
 }

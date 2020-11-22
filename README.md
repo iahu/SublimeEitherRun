@@ -10,7 +10,7 @@ it very like a JavaScript Promise version sublime run_command
 
 work with sublime-hooks
 
-```json
+```js
 {
 	"on_post_save_user": [
 		{

@@ -12,12 +12,12 @@ work with sublime-hooks
 
 ```js
 {
-	{
-	  "command": "either_run",
-	  "args": {
-	    "cmd": "git log --diff-filter=A --author=yourName",
-	    "resolve": "js_prettier"
-	  }
-	}
+  {
+    "command": "either_run",
+    "args": {
+      "cmd": "git log --diff-filter=A --author=yourName",
+      "resolve": "js_prettier"
+    }
+  }
 }
 ```

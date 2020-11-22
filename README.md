@@ -12,15 +12,12 @@ work with sublime-hooks
 
 ```js
 {
-	"on_post_save_user": [
-		{
-			"command": "either_run",
-			"args": {
-				"cmd": "git log --diff-filter=A --author=yourName", // required
-				"resolve": "js_prettier", // optional
-				"reject": "select_all" // optional
-			}
-		}
-	]
+	{
+	  "command": "either_run",
+	  "args": {
+	    "cmd": "git log --diff-filter=A --author=yourName",
+	    "resolve": "js_prettier"
+	  }
+	}
 }
 ```

@@ -15,8 +15,9 @@ work with sublime-hooks
   {
     "command": "either_run",
     "args": {
-      "cmd": "git log --diff-filter=A --author=yourName",
-      "resolve": "js_prettier"
+      "cmd": "git log --diff-filter=A --author=yourName", // required
+      "resolve": "js_prettier", // optional
+      "reject": "select_all" // optional
     }
   }
 }

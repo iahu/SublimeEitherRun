@@ -20,13 +20,15 @@ work with sublime-hooks
 
 ```js
 {
-  {
-    "command": "either_run",
-    "args": {
-      "cmd": "git log --diff-filter=A --author=yourName", // required
-      "resolve": "js_prettier", // optional, run if cmd return stdout
-      "reject": "select_all" // optional, run if cmd return stderr
+  "on_post_save_project": [
+    {
+      "command": "either_run",
+      "args": {
+        "cmd": "git log --diff-filter=A --author=yourName", // required
+        "resolve": "js_prettier", // optional, run if cmd return stdout
+        "reject": "select_all" // optional, run if cmd return stderr
+      }
     }
-  }
+  ]
 }
 ```
